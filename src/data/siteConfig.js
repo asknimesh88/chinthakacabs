@@ -11,7 +11,7 @@ export const siteConfig = {
   googleReviewCount: 50,
   hours: {
     weekdays: '24 Hours',
-    sunday: '10:00 AM – 6:00 PM',
+    sunday: '10:00 AM - 6:00 PM',
   },
   social: {
     google: 'https://www.google.com/maps/place/Chinthaka+Cab+Service/@6.7149871,80.7833763,17z/',

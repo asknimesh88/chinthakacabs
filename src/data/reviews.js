@@ -22,7 +22,7 @@ export const reviews = [
     name: 'Kesara Nirwan',
     rating: 5,
     source: 'Google',
-    text: 'What a great trip! Thank you Chinthaka — we had an amazing time.',
+    text: 'What a great trip! Thank you Chinthaka, we had an amazing time.',
   },
   {
     name: 'Eranga Thenuwara',

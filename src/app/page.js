@@ -44,13 +44,13 @@ export default function Home() {
             Explore Sri Lanka with a Trusted Local Driver
           </h1>
           <p className="mt-4 text-lg sm:text-xl text-white/90 max-w-2xl">
-            From airport pickups to week-long island tours — safe, comfortable, and personal.
+            From airport pickups to week-long island tours. Safe, comfortable, and personal.
           </p>
           <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-sm text-white">
             <svg className="w-5 h-5 fill-accent" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M10 1l2.39 6.37H19l-5.3 4.13 1.87 6.5L10 14.26 4.44 18l1.87-6.5L1 7.37h6.61z" />
             </svg>
-            {siteConfig.googleRating} — Rated by travelers on Google
+            {siteConfig.googleRating} / 5 on Google Reviews
           </div>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <a
@@ -189,10 +189,10 @@ export default function Home() {
                 I&rsquo;m Chinthaka
               </h2>
               <p className="mt-4 text-warm-800/80 leading-relaxed">
-                I&rsquo;ve been driving travelers across Sri Lanka for years — from sunrise at Horton Plains to sunset at Galle Fort. I started Chinthaka Cab Service because I love showing people my country.
+                I&rsquo;ve been driving travelers across Sri Lanka for years, from sunrise at Horton Plains to sunset at Galle Fort. I started Chinthaka Cab Service because I love showing people my country.
               </p>
               <p className="mt-3 text-warm-800/80 leading-relaxed">
-                When you ride with me, you don&rsquo;t just get a driver — you get a local friend who knows every shortcut, the best rice and curry spots, and which viewpoints the tour buses skip. My car is always clean, the AC always works, and I&rsquo;ll never overcharge you. That&rsquo;s my promise.
+                When you ride with me, you don&rsquo;t just get a driver. You get a local friend who knows every shortcut, the best rice and curry spots, and which viewpoints the tour buses skip. My car is always clean, the AC always works, and I&rsquo;ll never overcharge you. That&rsquo;s my promise.
               </p>
               <div className="mt-8 flex gap-6 sm:gap-10">
                 {[
@@ -324,7 +324,7 @@ export default function Home() {
             Ready to Explore Sri Lanka?
           </h2>
           <p className="mt-4 text-white/90 text-lg leading-relaxed max-w-xl mx-auto">
-            Send Chinthaka a message on WhatsApp to plan your trip. No middlemen, no booking fees — just a direct conversation.
+            Send Chinthaka a message on WhatsApp to plan your trip. No middlemen, no booking fees. Just a direct conversation.
           </p>
           <a
             href={siteConfig.whatsappLink}

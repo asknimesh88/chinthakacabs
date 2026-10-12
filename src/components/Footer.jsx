@@ -115,7 +115,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2 text-sm text-warm-200/80">
               <li className="flex justify-between">
-                <span>Monday – Saturday</span>
+                <span>Monday - Saturday</span>
                 <span className="font-medium text-white">
                   {siteConfig.hours.weekdays}
                 </span>
