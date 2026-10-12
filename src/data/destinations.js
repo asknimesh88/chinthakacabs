@@ -1,0 +1,72 @@
+export const destinations = [
+  {
+    name: 'Ella',
+    slug: 'ella',
+    tagline: 'Nine Arches Bridge & tea country trails',
+    description: 'Walk across the iconic Nine Arches Bridge, hike Little Adam\'s Peak, and ride the scenic train through misty tea plantations.',
+    image: '/images/hero/nine-arches-bridge',
+  },
+  {
+    name: 'Sigiriya',
+    slug: 'sigiriya',
+    tagline: 'The ancient rock fortress in the sky',
+    description: 'Climb the 5th-century Lion Rock fortress, explore the mirror wall frescoes, and take in panoramic views of the surrounding jungle.',
+    image: '/images/destinations/sigiriya',
+  },
+  {
+    name: 'Kandy',
+    slug: 'kandy',
+    tagline: 'Sacred temples & lakeside serenity',
+    description: 'Visit the Temple of the Sacred Tooth Relic, stroll around Kandy Lake, and experience traditional Kandyan dance performances.',
+    image: '/images/destinations/kandy-lake',
+  },
+  {
+    name: 'Horton Plains',
+    slug: 'horton-plains',
+    tagline: "World's End & misty highlands",
+    description: "Hike to World's End, a sheer cliff with an 870-metre drop, spot sambar deer and endemic birds in Sri Lanka's highest plateau.",
+    image: '/images/destinations/worlds-end',
+  },
+  {
+    name: "Lipton's Seat",
+    slug: 'liptons-seat',
+    tagline: 'Sunrise above the clouds',
+    description: "Watch the sunrise from Sir Thomas Lipton's favourite viewpoint, surrounded by endless tea estates in the Haputale hills.",
+    image: '/images/destinations/liptons-seat',
+  },
+  {
+    name: 'Yala & Safari',
+    slug: 'yala',
+    tagline: 'Leopards, elephants & wild encounters',
+    description: 'Spot leopards, elephants, crocodiles, and hundreds of bird species on a jeep safari through Sri Lanka\'s premier national park.',
+    image: '/images/destinations/sambar-deer',
+  },
+  {
+    name: 'Colombo Airport',
+    slug: 'airport',
+    tagline: 'Reliable pickup & drop-off',
+    description: 'Start or end your Sri Lanka trip with a comfortable, on-time airport transfer. Chinthaka will be there with your name board, ready to go.',
+    image: '/images/gallery/airport-pickup',
+  },
+  {
+    name: 'Temple of the Tooth',
+    slug: 'temple-of-tooth',
+    tagline: "Sri Lanka's most sacred Buddhist site",
+    description: "Visit the UNESCO World Heritage temple that houses the relic of the tooth of Buddha, set in the heart of Kandy's royal palace complex.",
+    image: '/images/destinations/temple-of-tooth',
+  },
+];
+
+export const galleryImages = [
+  { src: '/images/gallery/safari-with-tourist', alt: 'Chinthaka on a safari jeep with a tourist', location: 'National Park Safari' },
+  { src: '/images/gallery/group-at-lodge', alt: 'Chinthaka with travelers at a safari lodge', location: 'Safari Lodge' },
+  { src: '/images/gallery/airport-pickup', alt: 'Chinthaka meeting travelers at Colombo Airport', location: 'Colombo Airport' },
+  { src: '/images/gallery/horton-plains-group', alt: 'Chinthaka with a group of tourists at Horton Plains', location: 'Horton Plains' },
+  { src: '/images/gallery/team-with-van', alt: 'Chinthaka and team with the cab van', location: 'On the Road' },
+  { src: '/images/gallery/coastal-monument', alt: 'Chinthaka at the southernmost point of Sri Lanka', location: 'Southern Coast' },
+  { src: '/images/gallery/horton-plains-sign', alt: 'Chinthaka at the Horton Plains entrance sign', location: 'Horton Plains' },
+  { src: '/images/gallery/national-park-friends', alt: 'Chinthaka with friends at a national park', location: 'National Park' },
+  { src: '/images/gallery/viewpoint-tourists', alt: 'Chinthaka with European tourists at a scenic viewpoint', location: 'Hill Country' },
+  { src: '/images/gallery/horton-plains-trek', alt: 'Chinthaka trekking with tourists at Horton Plains', location: 'Horton Plains' },
+  { src: '/images/gallery/kandy-lake-pavilion', alt: 'Chinthaka with tourists at Kandy Lake pavilion', location: 'Kandy' },
+];
