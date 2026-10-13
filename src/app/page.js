@@ -24,13 +24,13 @@ export default function Home() {
       <section id="home" className="relative min-h-screen flex items-end pb-16 sm:pb-24 md:items-center md:pb-0 scroll-mt-20">
         <picture className="absolute inset-0">
           <source
-            srcSet="/images/hero/nine-arches-bridge-640w.webp 640w, /images/hero/nine-arches-bridge-960w.webp 960w, /images/hero/nine-arches-bridge-1920w.webp 1920w"
+            srcSet="/images/hero/sigiriya-640w.webp 640w, /images/hero/sigiriya-960w.webp 960w, /images/hero/sigiriya-1920w.webp 1920w"
             type="image/webp"
             sizes="100vw"
           />
           <img
-            src="/images/hero/nine-arches-bridge-960w.jpg"
-            alt="Nine Arches Bridge in Ella, Sri Lanka"
+            src="/images/hero/sigiriya-960w.jpg"
+            alt="Sigiriya Rock Fortress, Sri Lanka"
             className="w-full h-full object-cover"
             fetchPriority="high"
           />

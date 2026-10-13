@@ -4,7 +4,7 @@ export const destinations = [
     slug: 'ella',
     tagline: 'Nine Arches Bridge & tea country trails',
     description: 'Walk across the iconic Nine Arches Bridge, hike Little Adam\'s Peak, and ride the scenic train through misty tea plantations.',
-    image: '/images/hero/nine-arches-bridge',
+    image: '/images/destinations/nine-arches-bridge',
   },
   {
     name: 'Sigiriya',
