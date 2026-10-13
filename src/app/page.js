@@ -73,28 +73,37 @@ export default function Home() {
       </section>
 
       {/* Trust Strip */}
-      <section className="bg-surface py-6 sm:py-8">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 text-warm-800 text-sm sm:text-base">
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              Island-Wide Service
+      <section className="relative -mt-10 z-20 px-4 sm:px-6">
+        <div className="mx-auto max-w-4xl">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-px rounded-2xl bg-warm-200 overflow-hidden shadow-lg">
+            <div className="flex flex-col items-center gap-2 bg-white py-6 px-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <p className="text-base font-semibold text-warm-900">Island-Wide</p>
+              <p className="text-sm text-warm-600">Anywhere in Sri Lanka</p>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="10" />
-                <path strokeLinecap="round" d="M12 6v6l4 2" />
-              </svg>
-              Available 24/7
+            <div className="flex flex-col items-center gap-2 bg-white py-6 px-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" />
+                  <path strokeLinecap="round" d="M12 6v6l4 2" />
+                </svg>
+              </div>
+              <p className="text-base font-semibold text-warm-900">Available 24/7</p>
+              <p className="text-sm text-warm-600">Day or night, rain or shine</p>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 fill-accent" viewBox="0 0 20 20" aria-hidden="true">
-                <path d="M10 1l2.39 6.37H19l-5.3 4.13 1.87 6.5L10 14.26 4.44 18l1.87-6.5L1 7.37h6.61z" />
-              </svg>
-              {siteConfig.googleRating}&#9733; Google Rating
+            <div className="flex flex-col items-center gap-2 bg-white py-6 px-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10">
+                <svg className="w-6 h-6 fill-accent" viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M10 1l2.39 6.37H19l-5.3 4.13 1.87 6.5L10 14.26 4.44 18l1.87-6.5L1 7.37h6.61z" />
+                </svg>
+              </div>
+              <p className="text-base font-semibold text-warm-900">{siteConfig.googleRating} / 5 Stars</p>
+              <p className="text-sm text-warm-600">{siteConfig.googleReviewCount}+ Google Reviews</p>
             </div>
           </div>
         </div>
