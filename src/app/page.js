@@ -24,13 +24,13 @@ export default function Home() {
       <section id="home" className="relative min-h-screen flex items-end pb-16 sm:pb-24 md:items-center md:pb-0 scroll-mt-20">
         <picture className="absolute inset-0">
           <source
-            srcSet="/images/hero/sigiriya-640w.webp 640w, /images/hero/sigiriya-960w.webp 960w, /images/hero/sigiriya-1920w.webp 1920w"
+            srcSet="/images/hero/worlds-end-640w.webp 640w, /images/hero/worlds-end-960w.webp 960w, /images/hero/worlds-end-1920w.webp 1920w"
             type="image/webp"
             sizes="100vw"
           />
           <img
-            src="/images/hero/sigiriya-960w.jpg"
-            alt="Sigiriya Rock Fortress, Sri Lanka"
+            src="/images/hero/worlds-end-960w.jpg"
+            alt="Chinthaka at World's End, Horton Plains, Sri Lanka"
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
