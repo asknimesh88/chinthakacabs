@@ -192,7 +192,7 @@ export default function Home() {
                   <img
                     src="/images/gallery/safari-with-tourist-800w.jpg"
                     alt="Chinthaka with a traveler on safari"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[25%_80%]"
                     loading="lazy"
                   />
                 </picture>
@@ -219,7 +219,7 @@ export default function Home() {
                   <div key={stat.label} className="text-center">
                     <div className="inline-flex text-accent mb-2">{stat.icon}</div>
                     <p className="text-xl font-bold text-white">{stat.label}</p>
-                    <p className="text-xs text-warm-400 uppercase tracking-wider mt-1">{stat.value}</p>
+                    <p className="text-xs text-warm-300 uppercase tracking-wider mt-1">{stat.value}</p>
                   </div>
                 ))}
               </div>
