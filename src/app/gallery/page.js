@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { galleryImages, galleryCategories } from '@/data/destinations';
 
+
 export default function GalleryPage() {
   const [active, setActive] = useState('All');
 

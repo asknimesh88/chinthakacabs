@@ -18,6 +18,7 @@ export const siteConfig = {
   },
   social: {
     google: 'https://www.google.com/maps/place/Chinthaka+Cab+Service/@6.7149871,80.7833763,17z/',
+    googleProfile: 'https://share.google/zmCf9lWjqNbsDAMAk',
   },
   url: 'https://chinthakacabs.com',
 };

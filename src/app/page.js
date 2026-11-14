@@ -273,11 +273,19 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white">
             What Travelers Say
           </h2>
-          <div className="mt-4 inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-sm px-5 py-2.5">
+          <a
+            href={siteConfig.social.googleProfile}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-3 rounded-full bg-white/10 backdrop-blur-sm px-5 py-2.5 hover:bg-white/20 transition-colors"
+          >
             <GoogleLogo className="w-5 h-5" />
             <Stars />
             <span className="font-bold text-white">{siteConfig.googleRating}/5.0</span>
-          </div>
+            <svg className="w-4 h-4 text-white/60" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
         </div>
 
         {/* Scrolling review ticker */}
