@@ -183,39 +183,39 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="bg-primary py-16 sm:py-24 scroll-mt-20">
+      <section id="about" className="bg-warm-50 py-16 sm:py-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <div className="grid gap-0 md:grid-cols-5">
+          <div className="grid gap-0 md:grid-cols-5 rounded-2xl overflow-hidden shadow-xl">
             <div className="md:col-span-2 relative">
-              <div className="aspect-[3/4] sm:aspect-auto sm:h-full overflow-hidden rounded-t-2xl md:rounded-l-2xl md:rounded-tr-none">
+              <div className="aspect-[3/4] sm:aspect-auto sm:h-full overflow-hidden">
                 <picture>
                   <source
-                    srcSet="/images/gallery/safari-with-tourist-400w.webp 400w, /images/gallery/safari-with-tourist-800w.webp 800w"
+                    srcSet="/images/gallery/chinthaka-portrait-400w.webp 400w, /images/gallery/chinthaka-portrait-800w.webp 800w"
                     type="image/webp"
                     sizes="(min-width: 768px) 40vw, 100vw"
                   />
                   <img
-                    src="/images/gallery/safari-with-tourist-800w.jpg"
-                    alt="Chinthaka with a traveler on safari"
-                    className="w-full h-full object-cover object-[25%_80%]"
+                    src="/images/gallery/chinthaka-portrait-800w.jpg"
+                    alt="Chinthaka, your personal driver in Sri Lanka"
+                    className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </picture>
               </div>
             </div>
-            <div className="md:col-span-3 bg-warm-900 rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none p-8 sm:p-10 lg:p-14 flex flex-col justify-center">
-              <p className="text-accent font-semibold text-sm tracking-widest uppercase mb-3">Meet Your Driver</p>
-              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-white">
+            <div className="md:col-span-3 bg-white p-8 sm:p-10 lg:p-14 flex flex-col justify-center">
+              <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Meet Your Driver</p>
+              <h2 className="text-3xl sm:text-4xl font-serif font-bold text-warm-900">
                 I&rsquo;m Chinthaka
               </h2>
-              <div className="mt-1 h-1 w-16 rounded bg-accent"></div>
-              <p className="mt-6 text-warm-200 text-base sm:text-lg leading-relaxed">
+              <div className="mt-2 h-1 w-16 rounded bg-accent"></div>
+              <p className="mt-6 text-warm-700 text-base sm:text-lg leading-relaxed">
                 I&rsquo;ve been driving travelers across Sri Lanka for years, from sunrise at Horton Plains to sunset at Galle Fort. I started Chinthaka Cab Service because I love showing people my country.
               </p>
-              <p className="mt-4 text-warm-200 text-base sm:text-lg leading-relaxed">
+              <p className="mt-4 text-warm-700 text-base sm:text-lg leading-relaxed">
                 When you ride with me, you don&rsquo;t just get a driver. You get a local friend who knows every shortcut, the best rice and curry spots, and which viewpoints the tour buses skip. My car is always clean, the AC always works, and I&rsquo;ll never overcharge you. That&rsquo;s my promise.
               </p>
-              <div className="mt-8 grid grid-cols-3 gap-4 border-t border-warm-700 pt-8">
+              <div className="mt-8 grid grid-cols-3 gap-4 border-t border-warm-200 pt-8">
                 {[
                   { label: 'Island-Wide', value: 'Service', icon: (<svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>) },
                   { label: '24/7', value: 'Available', icon: (<svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path strokeLinecap="round" d="M12 6v6l4 2" /></svg>) },
@@ -223,8 +223,8 @@ export default function Home() {
                 ].map((stat) => (
                   <div key={stat.label} className="text-center">
                     <div className="inline-flex text-accent mb-2">{stat.icon}</div>
-                    <p className="text-xl font-bold text-white">{stat.label}</p>
-                    <p className="text-xs text-warm-300 uppercase tracking-wider mt-1">{stat.value}</p>
+                    <p className="text-xl font-bold text-warm-900">{stat.label}</p>
+                    <p className="text-xs text-warm-600 uppercase tracking-wider mt-1">{stat.value}</p>
                   </div>
                 ))}
               </div>
