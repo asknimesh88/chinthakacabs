@@ -268,38 +268,55 @@ export default function Home() {
       </section>
 
       {/* Reviews */}
-      <section id="reviews" className="bg-surface py-16 sm:py-24 scroll-mt-20">
+      <section id="reviews" className="bg-white py-16 sm:py-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-warm-900 text-center">
-            What Travelers Say
-          </h2>
-          <div className="mt-4 flex items-center justify-center gap-2 text-warm-800">
-            <Stars />
-            <span className="font-semibold">{siteConfig.googleRating}/5.0</span>
-            <span className="text-sm text-warm-800/60 inline-flex items-center gap-1">on <GoogleLogo className="w-4 h-4" /></span>
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl font-serif font-bold text-warm-900">
+              What Travelers Say
+            </h2>
+            <div className="mt-4 inline-flex items-center gap-3 rounded-full bg-warm-50 border border-warm-200 px-5 py-2.5">
+              <GoogleLogo className="w-5 h-5" />
+              <Stars />
+              <span className="font-bold text-warm-900">{siteConfig.googleRating}/5.0</span>
+              <span className="text-sm text-warm-600">{siteConfig.googleReviewCount}+ reviews</span>
+            </div>
           </div>
 
           {/* Featured review */}
-          <article className="mt-10 mx-auto max-w-3xl rounded-xl bg-white p-6 sm:p-8 shadow-sm relative">
-            <svg className="absolute top-4 left-4 w-8 h-8 text-accent/20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
+          <article className="mt-10 mx-auto max-w-3xl rounded-2xl bg-surface border border-warm-200 p-6 sm:p-8 relative">
+            <svg className="absolute top-5 left-5 w-10 h-10 text-primary/10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
             </svg>
-            <div className="pl-8 sm:pl-10">
+            <div className="pl-8 sm:pl-12">
               <Stars />
-              <p className="mt-3 text-warm-800 leading-relaxed">{featuredReview.text}</p>
-              <p className="mt-4 font-semibold text-warm-900">{featuredReview.name}</p>
-              <p className="text-xs text-warm-800/60 inline-flex items-center gap-1"><GoogleLogo className="w-3.5 h-3.5" /> Review</p>
+              <p className="mt-3 text-warm-800 leading-relaxed text-base sm:text-lg">{featuredReview.text}</p>
+              <div className="mt-5 flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-white font-bold text-sm">
+                  {featuredReview.name.charAt(0)}
+                </div>
+                <div>
+                  <p className="font-semibold text-warm-900">{featuredReview.name}</p>
+                  <p className="text-xs text-warm-600 inline-flex items-center gap-1"><GoogleLogo className="w-3.5 h-3.5" /> Review</p>
+                </div>
+              </div>
             </div>
           </article>
 
-          {/* Other reviews */}
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {reviews.slice(0, 6).map((review, i) => (
-              <article key={i} className="rounded-xl bg-white p-5 shadow-sm">
+          {/* Review cards - horizontal scroll on mobile, grid on desktop */}
+          <div className="mt-8 flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:overflow-visible sm:pb-0">
+            {reviews.slice(0, 8).map((review, i) => (
+              <article key={i} className="min-w-[260px] sm:min-w-0 snap-start rounded-2xl bg-surface border border-warm-200 p-5 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-primary/20 flex flex-col">
                 <Stars count={review.rating} />
-                <p className="mt-3 text-sm text-warm-800/80 leading-relaxed">{review.text}</p>
-                <p className="mt-3 font-semibold text-warm-900 text-sm">{review.name}</p>
-                <p className="text-xs text-warm-800/60 inline-flex items-center gap-1"><GoogleLogo className="w-3.5 h-3.5" /> Review</p>
+                <p className="mt-3 text-sm text-warm-700 leading-relaxed flex-1">{review.text}</p>
+                <div className="mt-4 flex items-center gap-2.5 pt-3 border-t border-warm-200">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent/15 text-accent font-bold text-xs">
+                    {review.name.charAt(0)}
+                  </div>
+                  <div>
+                    <p className="font-semibold text-warm-900 text-sm">{review.name}</p>
+                    <p className="text-xs text-warm-500 inline-flex items-center gap-1"><GoogleLogo className="w-3 h-3" /> Review</p>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
