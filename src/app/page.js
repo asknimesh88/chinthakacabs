@@ -35,36 +35,36 @@ export default function Home() {
             fetchPriority="high"
           />
         </picture>
-        <div className="absolute inset-0 bg-gradient-to-t from-warm-900/90 via-warm-900/40 to-transparent" />
-        <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 md:py-24">
-          <p className="text-accent font-medium text-sm sm:text-base tracking-wide uppercase mb-3">
+        <div className="absolute inset-0 bg-gradient-to-t from-warm-900 via-warm-900/60 to-warm-900/25" />
+        <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 md:py-24" style={{ textShadow: '0 2px 12px rgba(0,0,0,0.4)' }}>
+          <p className="text-sm sm:text-base font-semibold tracking-widest uppercase mb-4 text-white/70">
             Private Driver &amp; Car Rental
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight max-w-3xl">
             Explore Sri Lanka with a Trusted Local Driver
           </h1>
-          <p className="mt-4 text-lg sm:text-xl text-white/90 max-w-2xl">
+          <p className="mt-4 text-lg sm:text-xl text-white/85 max-w-2xl leading-relaxed">
             From airport pickups to week-long island tours. Safe, comfortable, and personal.
           </p>
-          <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-sm text-white">
+          <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-warm-900/50 backdrop-blur-md border border-white/10 px-4 py-2 text-sm font-medium text-white" style={{ textShadow: 'none' }}>
             <svg className="w-5 h-5 fill-accent" viewBox="0 0 20 20" aria-hidden="true">
               <path d="M10 1l2.39 6.37H19l-5.3 4.13 1.87 6.5L10 14.26 4.44 18l1.87-6.5L1 7.37h6.61z" />
             </svg>
             {siteConfig.googleRating} / 5 on Google Reviews
           </div>
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row gap-4" style={{ textShadow: 'none' }}>
             <a
               href={siteConfig.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3 text-base font-semibold text-white hover:bg-accent-dark transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-base font-semibold text-white shadow-lg hover:bg-accent-dark transition-colors"
             >
               Book via WhatsApp
               <span aria-hidden="true">&rarr;</span>
             </a>
             <a
               href="#services"
-              className="inline-flex items-center justify-center rounded-lg border-2 border-white px-6 py-3 text-base font-semibold text-white hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-white/60 px-6 py-3.5 text-base font-semibold text-white hover:bg-white/10 hover:border-white transition-colors"
             >
               View Services
             </a>
