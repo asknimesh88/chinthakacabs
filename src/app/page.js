@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import { siteConfig } from '@/data/siteConfig';
 import { featuredReview, reviews } from '@/data/reviews';
 import { destinations, galleryImages } from '@/data/destinations';
+import GoogleLogo from '@/components/GoogleLogo';
 
 function Stars({ count = 5 }) {
   return (
@@ -97,13 +99,11 @@ export default function Home() {
               <p className="text-sm text-warm-600">Day or night, rain or shine</p>
             </div>
             <div className="flex flex-col items-center gap-2 bg-white py-6 px-4">
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-accent/10">
-                <svg className="w-6 h-6 fill-accent" viewBox="0 0 20 20" aria-hidden="true">
-                  <path d="M10 1l2.39 6.37H19l-5.3 4.13 1.87 6.5L10 14.26 4.44 18l1.87-6.5L1 7.37h6.61z" />
-                </svg>
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-warm-100">
+                <GoogleLogo className="w-6 h-6" />
               </div>
               <p className="text-base font-semibold text-warm-900">{siteConfig.googleRating} / 5 Stars</p>
-              <p className="text-sm text-warm-600">{siteConfig.googleReviewCount}+ Google Reviews</p>
+              <p className="text-sm text-warm-600 inline-flex items-center gap-1.5">{siteConfig.googleReviewCount}+ Reviews on <GoogleLogo className="w-3.5 h-3.5" /></p>
             </div>
           </div>
         </div>
@@ -271,7 +271,7 @@ export default function Home() {
           <div className="mt-4 flex items-center justify-center gap-2 text-warm-800">
             <Stars />
             <span className="font-semibold">{siteConfig.googleRating}/5.0</span>
-            <span className="text-sm text-warm-800/60">on Google</span>
+            <span className="text-sm text-warm-800/60 inline-flex items-center gap-1">on <GoogleLogo className="w-4 h-4" /></span>
           </div>
 
           {/* Featured review */}
@@ -283,7 +283,7 @@ export default function Home() {
               <Stars />
               <p className="mt-3 text-warm-800 leading-relaxed">{featuredReview.text}</p>
               <p className="mt-4 font-semibold text-warm-900">{featuredReview.name}</p>
-              <p className="text-xs text-warm-800/60">{featuredReview.source} Review</p>
+              <p className="text-xs text-warm-800/60 inline-flex items-center gap-1"><GoogleLogo className="w-3.5 h-3.5" /> Review</p>
             </div>
           </article>
 
@@ -294,14 +294,14 @@ export default function Home() {
                 <Stars count={review.rating} />
                 <p className="mt-3 text-sm text-warm-800/80 leading-relaxed">{review.text}</p>
                 <p className="mt-3 font-semibold text-warm-900 text-sm">{review.name}</p>
-                <p className="text-xs text-warm-800/60">{review.source}</p>
+                <p className="text-xs text-warm-800/60 inline-flex items-center gap-1"><GoogleLogo className="w-3.5 h-3.5" /> Review</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Gallery */}
+      {/* Gallery Preview */}
       <section id="gallery" className="bg-white py-16 sm:py-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-serif font-bold text-warm-900 text-center">
@@ -323,13 +323,24 @@ export default function Home() {
                     loading="lazy"
                   />
                 </picture>
-                <div className="absolute inset-0 bg-warm-900/0 group-hover:bg-warm-900/50 transition-colors duration-300 flex items-end p-3">
-                  <span className="text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-warm-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-3">
+                  <span className="text-white text-sm font-medium">
                     {img.location}
                   </span>
                 </div>
               </div>
             ))}
+          </div>
+          <div className="mt-8 text-center">
+            <Link
+              href="/gallery"
+              className="inline-flex items-center gap-2 rounded-lg border-2 border-primary px-6 py-3 text-base font-semibold text-primary hover:bg-primary hover:text-white transition-colors"
+            >
+              View All Photos
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
