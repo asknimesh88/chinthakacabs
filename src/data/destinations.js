@@ -69,4 +69,9 @@ export const galleryImages = [
   { src: '/images/gallery/viewpoint-tourists', alt: 'Chinthaka with European tourists at a scenic viewpoint', location: 'Hill Country' },
   { src: '/images/gallery/horton-plains-trek', alt: 'Chinthaka trekking with tourists at Horton Plains', location: 'Horton Plains' },
   { src: '/images/gallery/kandy-lake-pavilion', alt: 'Chinthaka with tourists at Kandy Lake pavilion', location: 'Kandy' },
+  { src: '/images/gallery/safari-jeep-group', alt: 'Chinthaka with travelers in a safari jeep', location: 'National Park Safari' },
+  { src: '/images/gallery/beach-group-selfie', alt: 'Chinthaka with travelers at the coast', location: 'Southern Coast' },
+  { src: '/images/gallery/beach-standing-group', alt: 'Chinthaka with travelers by the ocean', location: 'Coastal Tour' },
+  { src: '/images/gallery/van-interior-group', alt: 'Chinthaka driving with travelers in the van', location: 'On the Road' },
+  { src: '/images/gallery/lake-reservoir-group', alt: 'Chinthaka with travelers at a scenic reservoir', location: 'Hill Country' },
 ];

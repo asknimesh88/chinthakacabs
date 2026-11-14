@@ -24,13 +24,13 @@ export default function Home() {
       <section id="home" className="relative min-h-screen flex items-end pb-16 sm:pb-24 md:items-center md:pb-0 scroll-mt-20">
         <picture className="absolute inset-0">
           <source
-            srcSet="/images/hero/worlds-end-640w.webp 640w, /images/hero/worlds-end-960w.webp 960w, /images/hero/worlds-end-1920w.webp 1920w"
+            srcSet="/images/hero/lake-reservoir-group-640w.webp 640w, /images/hero/lake-reservoir-group-960w.webp 960w, /images/hero/lake-reservoir-group-1920w.webp 1920w"
             type="image/webp"
             sizes="100vw"
           />
           <img
-            src="/images/hero/worlds-end-960w.jpg"
-            alt="Chinthaka at World's End, Horton Plains, Sri Lanka"
+            src="/images/hero/lake-reservoir-group-960w.jpg"
+            alt="Chinthaka with travelers at a scenic reservoir in Sri Lanka"
             className="w-full h-full object-cover"
             fetchPriority="high"
           />
@@ -355,7 +355,7 @@ export default function Home() {
             Chat with Chinthaka
           </a>
           <p className="mt-4 text-white/80 text-sm">
-            Or call directly: <a href={`tel:${siteConfig.phone}`} className="underline hover:text-white">{siteConfig.phoneDisplay}</a>
+            Or call directly: <a href={`tel:${siteConfig.phone}`} className="underline hover:text-white">{siteConfig.phoneDisplay}</a> / <a href={`tel:${siteConfig.phone2}`} className="underline hover:text-white">{siteConfig.phone2Display}</a>
           </p>
         </div>
       </section>
