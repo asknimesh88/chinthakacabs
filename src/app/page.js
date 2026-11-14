@@ -110,18 +110,22 @@ export default function Home() {
       </section>
 
       {/* Services */}
-      <section id="services" className="bg-warm-50 py-16 sm:py-24 scroll-mt-20">
+      <section id="services" className="bg-warm-900 py-16 sm:py-24 scroll-mt-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-warm-900 text-center">
+          <p className="text-accent font-semibold text-sm tracking-widest uppercase text-center mb-3">Services</p>
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-white text-center">
             How Chinthaka Can Help
           </h2>
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <p className="mt-3 text-warm-200/70 text-center max-w-xl mx-auto">
+            From the airport to the highlands, one driver covers it all.
+          </p>
+          <div className="mt-12 grid gap-6 sm:grid-cols-2">
             {[
               {
                 title: 'Airport Transfers',
                 desc: 'Reliable pickup and drop-off at Colombo Bandaranaike International Airport. Chinthaka will be there with your name board.',
                 icon: (
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                   </svg>
                 ),
@@ -130,7 +134,7 @@ export default function Home() {
                 title: 'Day Tours',
                 desc: 'Explore Sigiriya, Kandy, Galle, or any destination with a full-day guided drive. Chinthaka knows the hidden spots.',
                 icon: (
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
                   </svg>
                 ),
@@ -139,7 +143,7 @@ export default function Home() {
                 title: 'Multi-Day Tours',
                 desc: 'Custom itineraries for 3, 5, 7, or 14-day tours across Sri Lanka. Hotels, routes, and stops planned together.',
                 icon: (
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
                   </svg>
                 ),
@@ -148,23 +152,23 @@ export default function Home() {
                 title: 'Car Rental',
                 desc: 'Clean, comfortable, air-conditioned vehicles with or without a driver. Flexible daily and weekly rates.',
                 icon: (
-                  <svg className="w-7 h-7 text-white" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0H21M3.375 14.25h17.25M3.375 14.25a1.125 1.125 0 01-1.125-1.125V6.375A1.125 1.125 0 013.375 5.25h17.25a1.125 1.125 0 011.125 1.125v6.75a1.125 1.125 0 01-1.125 1.125" />
                   </svg>
                 ),
               },
             ].map((service) => (
-              <article key={service.title} className="group rounded-2xl border border-warm-200 bg-white p-7 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:border-primary/30 flex flex-col">
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-xl bg-primary shadow-sm">
+              <article key={service.title} className="group relative rounded-2xl bg-warm-800 p-8 transition-all duration-300 hover:bg-warm-800/80 flex flex-col border-l-4 border-primary">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-primary/15">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-bold text-warm-900">{service.title}</h3>
-                <p className="mt-3 text-warm-700 text-sm leading-relaxed flex-1">{service.desc}</p>
+                <h3 className="text-lg font-bold text-white">{service.title}</h3>
+                <p className="mt-2 text-warm-200/70 text-sm leading-relaxed flex-1">{service.desc}</p>
                 <a
                   href={siteConfig.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:text-primary-dark transition-colors"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-accent group-hover:text-accent-light transition-colors"
                 >
                   Chat on WhatsApp
                   <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
